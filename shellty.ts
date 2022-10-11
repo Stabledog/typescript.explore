@@ -1,11 +1,11 @@
-import readline from 'readline';
+import {createInterface} from 'readline';
 
 process.argv.forEach(
     function ( val, index, array) {
         console.log(index + ": " + val);
     });
 
-let a = readline.createInterface(process.stdin,process.stdout);
+let a = createInterface(process.stdin,process.stdout);
 
 a.setPrompt("Hello:");
 
